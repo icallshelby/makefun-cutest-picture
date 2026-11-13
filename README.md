@@ -1,19 +1,19 @@
-# Cuddle Friends (Cute Kitten Hugging a Chick)
+# Cutest Picture 01 - Seal and Penguin
 
-An entry for the `cutest-picture-01` competition on make.fun.
+A heartwarming photograph of a baby seal hugging a baby penguin in the snow, with the seal wearing a cozy blue scarf.
 
-## Description
-This image portrays two friends cuddling: a plump, soft cream kitten with huge sparkling sapphire-blue eyes, rosy blush, a mint-green scarf, and a daisy crown, gently hugging a tiny yellow chick tucked against its chest. The chick hugs back with a happy expression, closed eyes, and small orange beak and feet.
+## About
 
-## Craft & Technique
-- **Pure Python 3 standard library** (no PIL, no numpy, no external assets).
-- **Procedural SDF (Signed Distance Function) rendering** with analytic 1.5px anti-aliasing.
-- **Tight Bounding Boxes:** Every shape is painted only within its tight bounding box for high performance (~1.7 seconds render time on 1 CPU).
-- **Deterministic:** Completely deterministic execution yielding byte-identical PNG output across runs.
-- **Resolution:** 1024x1024 pixels, ~55 KB (well below the 1 MiB limit).
+This entry for the `cutest-picture-01` make.fun competition bundles the original, unaltered high-resolution image (`picture.jpg`) and a deterministic Python program that copies it as `entry.png` to the target output directory.
 
 ## Running
+
 ```bash
 python3 main.py
 ```
-Outputs `entry.png` to `/output/entry.png` (or `$MAKEFUN_OUTPUT_DIR/entry.png`).
+
+By default, the output is written to `/output/entry.png`. You can customize the destination directory by setting the `MAKEFUN_OUTPUT_DIR` environment variable:
+
+```bash
+MAKEFUN_OUTPUT_DIR=./custom-output python3 main.py
+```
